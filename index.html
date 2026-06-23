@@ -34,11 +34,10 @@
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Available for Node.js backend roles</p>
-        <h1>Backend Developer - Node.js - Clean Systems</h1>
+        <h1>Backend Developer | Node.js </h1>
         <p class="hero-text">
-          I build production-grade systems that are built to last. I read the docs first,
-          understand the problem deeply, then ship. I care about clean code more than impressive
-          metrics.
+          I build production-grade systems that are built to last. I focus on understanding the 
+          problem deeply, analyzing the architectural trade-offs, and shipping code that stays maintainable.
         </p>
         <div class="actions">
           <a class="button primary" href="#projects">See my work</a>
@@ -50,7 +49,7 @@
         <span>Operating principle</span>
         <p>I don't optimize for vanity. I optimize for systems that work.</p>
         <ul>
-          <li>Read the docs first</li>
+          <li>Deep problem analysis</li>
           <li>Understand trade-offs</li>
           <li>Ship maintainable systems</li>
         </ul>
@@ -64,19 +63,17 @@
       </div>
       <div class="copy">
         <p>
-          I'm a backend developer who believes in reading the docs first. Most developers jump
-          into coding. I spend time understanding the problem, the existing ecosystem, and the
-          best approach. It costs more time upfront, but saves chaos later.
+          I'm a backend developer who believes in careful planning over frantic coding. Most developers jump
+          straight into writing logic. I spend time researching the target domain, evaluating dependencies, 
+          and establishing a scalable structure before touching the editor.
         </p>
         <p>
-          I prefer clean, maintainable code over impressive-looking impact metrics. A codebase
-          that's easy to understand and modify is worth more than a system that's slightly faster
-          but unreadable.
+          I prefer clean, readable syntax over impressive-looking impact metrics. A codebase
+          that's easy to read, test, and modify saves an engineering team hundreds of hours down the road.
         </p>
         <p>
-          I'm confident in my solutions. Not arrogantly — I do my research, understand trade-offs,
-          and stand by my decisions. I don't follow trends. I follow what makes sense for the
-          problem at hand.
+          I stand by my technical choices because they are backed by solid criteria, not trends. I don't follow 
+          the newest framework hype; I stick to established patterns that reliably solve the business requirement.
         </p>
       </div>
     </section>
@@ -162,26 +159,16 @@
           </div>
         </div>
 
-        <div class="decision-grid">
-          <div>
-            <h4>Immutability by design</h4>
-            <p>Append-only datapoints prevent corruption and maintain an audit trail.</p>
-          </div>
-          <div>
-            <h4>Async threshold checking</h4>
-            <p>BullMQ keeps API responses fast while heavy work runs in the background.</p>
-          </div>
-          <div>
-            <h4>Cursor-based pagination</h4>
-            <p>Stable pagination even with concurrent inserts.</p>
-          </div>
-          <div>
-            <h4>Two-layer RBAC</h4>
-            <p>Global and workspace permissions handle complex access rules cleanly.</p>
-          </div>
-          <div>
-            <h4>Dual payment verification</h4>
-            <p>Client verification gives instant UX. Webhooks act as the safety net.</p>
+        <div class="project-two-column">
+          <div class="key-features-panel">
+            <h4>Key Features</h4>
+            <ul class="feature-list">
+              <li>Google OAuth login with app-owned JWT access and refresh tokens.</li>
+              <li>Socket.io workspace updates for live KPI synchronization.</li>
+              <li>Redis and BullMQ for async threshold checks and alerts.</li>
+              <li>Workspace-aware event broadcasting for real-time datapoints.</li>
+              <li>Reliable backend flow using Express, PostgreSQL, and Prisma.</li>
+            </ul>
           </div>
         </div>
 
@@ -200,7 +187,8 @@
           </div>
           <div class="links">
             <a href="https://github.com/suujalvaghela/KPI-SaaS" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://github.com/suujalvaghela/KPI-SaaS/tree/dev/kpi.bru" target="_blank" rel="noreferrer">API Docs</a>
+            <a href="https://github.com/suujalvaghela/KPI-SaaS/tree/dev/kpi.bru" target="_blank" rel="noreferrer">API
+              Docs</a>
             <a href="https://github.com/suujalvaghela/KPI-SaaS/blob/dev/Readme.md" target="_blank" rel="noreferrer">
               Architecture README
             </a>
@@ -251,17 +239,17 @@
           <aside class="architecture-card">
             <h4>Architecture Flow</h4>
             <p class="flow">DM → Webhook → Scraper → Validator → DB → Reply</p>
-            <h4>Tech Stack</h4>
-            <p><strong>Backend:</strong> Node.js, Express.js, Directus Extension</p>
-            <p><strong>Scraping:</strong> Apify, Puppeteer, Stealth Plugin</p>
-            <p><strong>Database:</strong> PostgreSQL</p>
-            <p><strong>APIs:</strong> Instagram Webhook API, Instagram Graph API</p>
-            <p><strong>Testing:</strong> Bruno</p>
-            <div class="links">
-              <a href="https://github.com/suujalvaghela" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="mailto:suujalvag@gmail.com?subject=Instagram%20Brand%20Intelligence%20Bruno%20Docs">
-                Bruno API Docs
-              </a>
+            <div class="stack-group">
+              <h4>Tech Stack</h4>
+              <p>Node.js, Express.js, Directus Extension</p>
+              <p>Apify, Puppeteer, Stealth Plugin</p>
+              <p>PostgreSQL, Instagram Webhook API, Instagram Graph API</p>
+            </div>
+            <div class="mini-chips">
+              <span>Webhooks</span>
+              <span>Scraping</span>
+              <span>Validation</span>
+              <span>Automation</span>
             </div>
           </aside>
         </div>
@@ -316,9 +304,16 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Sujal Vaghela · Backend Developer</p>
-    <p>I read the docs first.</p>
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="footer-brand">Sujal Vaghela</span>
+      <span class="footer-divider">/</span>
+      <span class="footer-role">Backend Developer</span>
+    </div>
+
+    <div class="footer-right">
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
