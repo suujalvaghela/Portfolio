@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sujal Vaghela is a backend developer focused on clean Node.js systems, TypeScript, PostgreSQL, automation, and maintainable architecture." />
+  <title>Sujal Vaghela | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#top" aria-label="Sujal Vaghela home">SV</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Available for Node.js backend roles</p>
+        <h1>Backend Developer | Node.js </h1>
+        <p class="hero-text">
+          I build production-grade systems that are built to last. I focus on understanding the 
+          problem deeply, analyzing the architectural trade-offs, and shipping code that stays maintainable.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#projects">See my work</a>
+          <a class="button ghost" href="mailto:suujalvag@gmail.com">Contact me</a>
+        </div>
+      </div>
+
+      <aside class="principle-card">
+        <span>Operating principle</span>
+        <p>I don't optimize for vanity. I optimize for systems that work.</p>
+        <ul>
+          <li>Deep problem analysis</li>
+          <li>Understand trade-offs</li>
+          <li>Ship maintainable systems</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section split" id="about">
+      <div>
+        <p class="eyebrow">About Me</p>
+        <h2>I research, plan, and write code people can maintain.</h2>
+      </div>
+      <div class="copy">
+        <p>
+          I'm a backend developer who believes in careful planning over frantic coding. Most developers jump
+          straight into writing logic. I spend time researching the target domain, evaluating dependencies, 
+          and establishing a scalable structure before touching the editor.
+        </p>
+        <p>
+          I prefer clean, readable syntax over impressive-looking impact metrics. A codebase
+          that's easy to read, test, and modify saves an engineering team hundreds of hours down the road.
+        </p>
+        <p>
+          I stand by my technical choices because they are backed by solid criteria, not trends. I don't follow 
+          the newest framework hype; I stick to established patterns that reliably solve the business requirement.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Backend work with real constraints.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div>
+            <h3>7Span</h3>
+            <p>Backend Developer</p>
+          </div>
+          <time>01/2026 — Present</time>
+          <ul>
+            <li>Built the first Instagram bot at 7Span using scraping, automation, and APIs.</li>
+            <li>Worked on backend systems for a social media platform.</li>
+            <li>Implemented geo-location based discovery feeds.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <div>
+            <h3>LDCE</h3>
+            <p>Data Analysis</p>
+          </div>
+          <time>06/2025 — 07/2025</time>
+          <ul>
+            <li>Analyzed student placement data.</li>
+            <li>Focused on actionable insights over vanity metrics.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <div>
+            <h3>CURIO</h3>
+            <p>Backend Developer</p>
+          </div>
+          <time>02/2025 — 05/2025</time>
+          <ul>
+            <li>Designed clean, scalable REST API architecture.</li>
+            <li>Defined database schemas with long-term maintainability in mind.</li>
+            <li>Focused on code clarity over premature optimization.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Systems with reasons behind every decision.</h2>
+      </div>
+
+      <article class="project featured-project">
+        <div class="project-header">
+          <div>
+            <p class="eyebrow">Featured Project</p>
+            <h3>KPI-Pulse: Clean Architecture, Real-Time Systems</h3>
+          </div>
+          <p>
+            A production-grade multi-tenant SaaS backend built to demonstrate how clean
+            architecture scales. Not a throwaway side project — a real system with real problems
+            solved.
+          </p>
+        </div>
+
+        <div class="problem-solution">
+          <div>
+            <span>Problem</span>
+            <p>
+              Small startups need affordable, real-time KPI tracking. Existing solutions are
+              either expensive or over-engineered.
+            </p>
+          </div>
+          <div>
+            <span>Solution</span>
+            <p>
+              A clean, modular backend that's easy to understand and modify. No clever tricks, no
+              premature optimization, just solid systems.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-two-column">
+          <div class="key-features-panel">
+            <h4>Key Features</h4>
+            <ul class="feature-list">
+              <li>Google OAuth login with app-owned JWT access and refresh tokens.</li>
+              <li>Socket.io workspace updates for live KPI synchronization.</li>
+              <li>Redis and BullMQ for async threshold checks and alerts.</li>
+              <li>Workspace-aware event broadcasting for real-time datapoints.</li>
+              <li>Reliable backend flow using Express, PostgreSQL, and Prisma.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="chips">
+            <span>Node.js</span>
+            <span>TypeScript</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+            <span>Prisma</span>
+            <span>Redis</span>
+            <span>Socket.io</span>
+            <span>BullMQ</span>
+            <span>Razorpay</span>
+            <span>Zod</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/suujalvaghela/KPI-SaaS" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/suujalvaghela/KPI-SaaS/tree/dev/kpi.bru" target="_blank" rel="noreferrer">API
+              Docs</a>
+            <a href="https://github.com/suujalvaghela/KPI-SaaS/blob/dev/Readme.md" target="_blank" rel="noreferrer">
+              Architecture README
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project secondary-project">
+        <div class="project-header">
+          <div>
+            <p class="eyebrow">Secondary Featured Project</p>
+            <h3>Instagram Brand Intelligence System</h3>
+          </div>
+          <p>
+            Automated D2C brand data extraction and validation. Built as a backend automation
+            platform with real-time webhook bot and intelligent scraping pipeline.
+          </p>
+        </div>
+
+        <div class="problem-solution">
+          <div>
+            <span>Problem</span>
+            <p>
+              D2C brands hide real websites behind Instagram profiles and aggregator pages.
+              Verifying legitimacy and collecting social links requires manual investigation.
+            </p>
+          </div>
+          <div>
+            <span>Solution</span>
+            <p>
+              A Directus extension that listens to Instagram DMs, scrapes profiles, resolves
+              links, validates websites, stores records, and replies with results.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-two-column">
+          <div>
+            <h4>Key Features</h4>
+            <ul class="feature-list">
+              <li>Real-time Instagram webhook bot for instant DM responses.</li>
+              <li>Aggregator-aware link resolution for Linktree-style pages.</li>
+              <li>Duplicate prevention to avoid re-scraping and API quota waste.</li>
+              <li>Social link collection for Facebook, LinkedIn, YouTube, TikTok, and X.</li>
+              <li>REST API support for batch processing.</li>
+            </ul>
+          </div>
+          <aside class="architecture-card">
+            <h4>Architecture Flow</h4>
+            <p class="flow">DM → Webhook → Scraper → Validator → DB → Reply</p>
+            <div class="stack-group">
+              <h4>Tech Stack</h4>
+              <p>Node.js, Express.js, Directus Extension</p>
+              <p>Apify, Puppeteer, Stealth Plugin</p>
+              <p>PostgreSQL, Instagram Webhook API, Instagram Graph API</p>
+            </div>
+            <div class="mini-chips">
+              <span>Webhooks</span>
+              <span>Scraping</span>
+              <span>Validation</span>
+              <span>Automation</span>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">What I Know</p>
+        <h2>Not a skills matrix. Just what I use regularly.</h2>
+      </div>
+      <div class="skills-grid">
+        <article>
+          <h3>Backend & Runtime</h3>
+          <p>Node.js · TypeScript · JavaScript</p>
+        </article>
+        <article>
+          <h3>Databases & Performance</h3>
+          <p>PostgreSQL · Redis · Prisma · Query Optimization</p>
+        </article>
+        <article>
+          <h3>Real-Time & Async</h3>
+          <p>Socket.io · BullMQ · Background Jobs · Async Patterns</p>
+        </article>
+        <article>
+          <h3>Integrations & APIs</h3>
+          <p>REST APIs · Google OAuth · Razorpay · Third-party integrations</p>
+        </article>
+        <article>
+          <h3>Principles I Follow</h3>
+          <p>Clean Code · Type Safety · Scalability · Long-term Maintainability</p>
+        </article>
+        <article>
+          <h3>Platforms</h3>
+          <p>GCP · Docker · GitHub · PostgreSQL</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Work Together</h2>
+      <p>
+        I'm actively looking for Node.js backend roles where I can build systems that matter. If
+        you're building something real, let's talk.
+      </p>
+      <div class="links contact-links">
+        <a href="mailto:suujalvag@gmail.com">suujalvag@gmail.com</a>
+        <a href="https://linkedin.com/in/suujalvaghela" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/suujalvaghela" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="footer-brand">Sujal Vaghela</span>
+      <span class="footer-divider">/</span>
+      <span class="footer-role">Backend Developer</span>
+    </div>
+
+    <div class="footer-right">
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuButton?.addEventListener("click", () => {
+      const isOpen = navLinks?.classList.toggle("is-open") ?? false;
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks?.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLAnchorElement) {
+        navLinks.classList.remove("is-open");
+        menuButton?.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
+</body>
+
+</html>
