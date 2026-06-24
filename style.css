@@ -375,10 +375,16 @@ h4 {
 .decision-grid div,
 .architecture-card,
 .skills-grid article {
-  min-height: 180px;
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
+}
+
+/* Kept min-height constraint specific to grid cells that require dimensional uniformity */
+.problem-solution div,
+.decision-grid div,
+.skills-grid article {
+  min-height: 180px;
 }
 
 .problem-solution span {
@@ -445,6 +451,7 @@ h4 {
 
 .architecture-card {
   align-self: start;
+  min-height: auto; /* Shrink-wraps the container cleanly around content instead of stretching */
 }
 
 .flow {
@@ -527,17 +534,19 @@ h4 {
   width: 100%;
 }
 
-.secondary-project .stack-group {
-  display: grid;
-  gap: 0.45rem;
+/* Generalized stack-group rules to support compressed multi-line lists cleanly */
+.stack-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   margin-top: 0.9rem;
 }
 
-.secondary-project .stack-group h4 {
+.stack-group h4 {
   margin-bottom: 0.2rem;
 }
 
-.secondary-project .stack-group p {
+.stack-group p {
   margin: 0;
 }
 

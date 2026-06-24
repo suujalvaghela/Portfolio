@@ -33,10 +33,9 @@
   <main id="top">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Available for Node.js backend roles</p>
         <h1>Backend Developer | Node.js </h1>
         <p class="hero-text">
-          I build production-grade systems that are built to last. I focus on understanding the 
+          I build production-grade systems that are built to last. I focus on understanding the
           problem deeply, analyzing the architectural trade-offs, and shipping code that stays maintainable.
         </p>
         <div class="actions">
@@ -64,7 +63,7 @@
       <div class="copy">
         <p>
           I'm a backend developer who believes in careful planning over frantic coding. Most developers jump
-          straight into writing logic. I spend time researching the target domain, evaluating dependencies, 
+          straight into writing logic. I spend time researching the target domain, evaluating dependencies,
           and establishing a scalable structure before touching the editor.
         </p>
         <p>
@@ -72,7 +71,7 @@
           that's easy to read, test, and modify saves an engineering team hundreds of hours down the road.
         </p>
         <p>
-          I stand by my technical choices because they are backed by solid criteria, not trends. I don't follow 
+          I stand by my technical choices because they are backed by solid criteria, not trends. I don't follow
           the newest framework hype; I stick to established patterns that reliably solve the business requirement.
         </p>
       </div>
@@ -170,21 +169,17 @@
               <li>Reliable backend flow using Express, PostgreSQL, and Prisma.</li>
             </ul>
           </div>
+          <aside class="architecture-card">
+            <div class="stack-group" style="margin-top: 0;">
+              <h4>Tech Stack</h4>
+              <p>Node.js, TypeScript, Express, Zod</p>
+              <p>PostgreSQL, Prisma, Redis</p>
+              <p>Socket.io, BullMQ, Razorpay</p>
+            </div>
+          </aside>
         </div>
 
         <div class="project-footer">
-          <div class="chips">
-            <span>Node.js</span>
-            <span>TypeScript</span>
-            <span>Express</span>
-            <span>PostgreSQL</span>
-            <span>Prisma</span>
-            <span>Redis</span>
-            <span>Socket.io</span>
-            <span>BullMQ</span>
-            <span>Razorpay</span>
-            <span>Zod</span>
-          </div>
           <div class="links">
             <a href="https://github.com/suujalvaghela/KPI-SaaS" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://github.com/suujalvaghela/KPI-SaaS/tree/dev/kpi.bru" target="_blank" rel="noreferrer">API
@@ -292,10 +287,6 @@
     <section class="section contact" id="contact">
       <p class="eyebrow">Contact</p>
       <h2>Let's Work Together</h2>
-      <p>
-        I'm actively looking for Node.js backend roles where I can build systems that matter. If
-        you're building something real, let's talk.
-      </p>
       <div class="links contact-links">
         <a href="mailto:suujalvag@gmail.com">suujalvag@gmail.com</a>
         <a href="https://linkedin.com/in/suujalvaghela" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -316,22 +307,7 @@
     </div>
   </footer>
 
-  <script>
-    const menuButton = document.querySelector(".menu-button");
-    const navLinks = document.querySelector(".nav-links");
-
-    menuButton?.addEventListener("click", () => {
-      const isOpen = navLinks?.classList.toggle("is-open") ?? false;
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    navLinks?.addEventListener("click", (event) => {
-      if (event.target instanceof HTMLAnchorElement) {
-        navLinks.classList.remove("is-open");
-        menuButton?.setAttribute("aria-expanded", "false");
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
