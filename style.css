@@ -270,7 +270,6 @@ h4 {
 .principle-card p {
   font-size: 2rem;
   font-weight: 800;
-  letter-spacing: -0.055em;
   line-height: 1;
 }
 
@@ -378,6 +377,10 @@ h4 {
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
+}
+
+.skills-grid article h3 {
+  letter-spacing: 0.25px;
 }
 
 /* Kept min-height constraint specific to grid cells that require dimensional uniformity */
@@ -678,4 +681,45 @@ h4 {
   .principle-card p {
     font-size: 1.55rem;
   }
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255,255,255,0.02);
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-links i {
+  font-size: 1.2rem;
+}
+
+.fa-linkedin-in {
+  color: #0A66C2;
+}
+
+.fa-github {
+  color: #ffffff;
+}
+
+.fa-envelope {
+  color: var(--accent);
 }
