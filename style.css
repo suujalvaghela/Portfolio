@@ -713,13 +713,22 @@ h4 {
 }
 
 .fa-linkedin-in {
+  width: 18px;
+  height: 18px;
   color: #0A66C2;
 }
 
 .fa-github {
+  width: 18px;
+  height: 18px;
   color: #ffffff;
 }
 
 .fa-envelope {
   color: var(--accent);
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
 }
